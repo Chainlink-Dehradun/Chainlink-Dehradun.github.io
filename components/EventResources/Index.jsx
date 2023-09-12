@@ -29,8 +29,8 @@ const OurPartners = () => {
     },
   ];
   return (
-    <section id="our-partners" className="section-container pt-12 lg:pt-24">
-      <SectionTitle title={"Our Partners"} />
+    <section id="event-resources" className="section-container pt-12 lg:pt-24">
+      <SectionTitle title={"Event Resources"} />
       <div className="flex flex-row">
         <div className=" w-1/12 ml-6">
           <div className=" hidden lg:flex">
@@ -78,6 +78,7 @@ const OurPartners = () => {
           </div>
         </div>
       </div>
+      
     </section>
   );
 };

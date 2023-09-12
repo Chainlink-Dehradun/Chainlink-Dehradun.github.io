@@ -4,7 +4,9 @@ import SectionTitle from "../shared/SectionTitle";
 import GDG from "../../images/logos/GDGAlgiers.png";
 import ParagSection from "../shared/ParagSection";
 import globe from "../../images/shapes/globe.png";
+import computer from "../../images/shapes/computer.png";
 import maqam from "../../images/shapes/MaqamWhite.png";
+import chainlink from "../../images/logos/Chainlink.svg"
 const AboutUs = () => {
   return (
     <section id="about-us">
@@ -16,32 +18,36 @@ const AboutUs = () => {
         </div>
 
         <div className="absolute bottom-8 left-4 w-[32px] h-[32px] md:w-[40px] md:h-[40px] lg:w-[55px] lg:h-[55px] 2xl:w-[82px] 2xl:h-[82px]">
-          <Image src={globe} layout="fill" />
+          <Image src={computer} layout="fill" />
         </div>
 
         <div className="absolute bottom-1/2 left-8 w-[75px] h-[53px] md:w-[40px] md:h-[40px] lg:w-[106px] lg:h-[76px] 2xl:w-[160px] 2xl:h-[112px]">
           <Image src={maqam} layout="fill" />
         </div>
+
         <div className="w-10/12 mx-auto flex flex-col gap-8">
           <SectionTitle isWhite={true} title={"About us"} />
           <div className="flex flex-col gap-12 lg:gap-28">
             <ParagSection
-              keyword1={"WTM Algiers "}
-              paragraph1={`also known as the "Women Techmakers Algiers" program, was created to increase visibility, community, and resources for women in technology and also spread learning and build role models globally. It's located at`}
-              keyword2={" the National Higher School of Computer science "}
-              paragraph2={`and dedicated to anyone who's passionate and motivated about the tech field.`}
-              img={WTM}
+              keyword1={"Chainlink "}
+              paragraph1={`acts like a bridge between blockchain and real-world info, mainly on Ethereum. It securely brings outside data to smart contracts on the blockchain, ensuring it's reliable. What's unique is that it can verify contract conditions without human involvement. It connects contracts to real-world facts, keeping them honest and secure.`}
+              keyword2={" Together they are making"}
+              paragraph2={` possible next-generation smart contracts powered by real-world data, events, and systems. Be a part of the future.`}
+              img={chainlink}
               reverse={false}
-              redirect={"https://www.wtmalgiers.org/"}
+              redirect={"https://chain.link"}
+              buttonTitle={'Visit us'}
             ></ParagSection>
             <ParagSection
-              keyword1={"GDG Algiers "}
-              paragraph1={`is a local group of developers and students who are interested in Google’s developer technology products. It is located at`}
-              keyword2={" the National Higher School of Computer science "}
+              keyword1={"Chainlink Dehradun's "}
+              paragraph1={`passionately spreading knowledge about the exciting realm of Web3.0 and empowers developers with valuable insights into ChainLink Tools for Web3
+               Development. We achieve this mission by hosting engaging local meetups and events in the vibrant city of Dehradun.`}
               paragraph2={`and hosts a variety of events activities for developers through different events that aim to help the developers community get the latest technology updates.`}
-              img={GDG}
+              keyword3={' For future events join us at'}
+              img={chainlink}
               reverse={true}
-              redirect={"https://www.gdgalgiers.com"}
+              redirect={"https://www.meetup.com/pro/chainlink/"}
+              buttonTitle={'Chainlink Meetup'}
             ></ParagSection>
           </div>
         </div>

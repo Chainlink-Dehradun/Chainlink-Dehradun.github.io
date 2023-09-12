@@ -23,14 +23,7 @@ const Footer = () => {
         <div className="pt-14 pl-4 pr-4 lg:pl-11 lg:pr-0 2xl:pl-16">
           <div className="flex flex-col gap-6">
             {/* LOGOS */}
-            <div className="flex items-center gap-7">
-              <div className="cursor-pointer">
-                <Image src={WTMWHITE} />
-              </div>
-              <div className="cursor-pointer">
-                <Image src={GDGWHITE} />
-              </div>
-            </div>
+          
 
             {/* MAIN */}
             <div className="flex flex-col lg:flex-row gap-12">
@@ -82,7 +75,7 @@ const Footer = () => {
       {/* Copyrights */}
       <div className="flex justify-center px-4">
         <p className="text-[0.9375rem] pb-2 text-center">
-          Copyright © 2022 GDG & WTM Algiers . All Rights Reserved.
+          Copyright © Chainlink Dehradun . All Rights Reserved.
         </p>
       </div>
 

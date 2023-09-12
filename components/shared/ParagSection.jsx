@@ -5,9 +5,11 @@ const ParagSection = ({
   paragraph1,
   keyword2,
   paragraph2,
+  keyword3,
   img,
   reverse,
-  redirect
+  redirect,
+  buttonTitle
 }) => {
   return (
     <div className="flex flex-col gap-10 items-center lg:flex-row">
@@ -17,10 +19,11 @@ const ParagSection = ({
           {paragraph1}
           <span className="font-bold text-qiskit-black">{keyword2}</span>
           {paragraph2}
+         <span className="font-bold text-qiskit-black">{keyword3}</span>
         </p>
-
-        <div>
-          <YellowButton redirect={redirect} title={"Visit our website"} />
+        
+        <div className="relatve">
+          <YellowButton redirect={redirect} title={buttonTitle} />
         </div>
       </div>
 

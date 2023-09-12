@@ -51,12 +51,8 @@ export const links = [
     linkName: "Partners",
     content: [
       {
-        name: "Community Partners",
-        redirect: "#our-partners",
-      },
-      {
-        name: "Sponsors",
-        redirect: "#our-sponsors",
+        name: "Event Resources",
+        redirect: "#event-resources",
       },
     ],
   },
@@ -68,7 +64,7 @@ export const links = [
         redirect: "#speakers",
       },
       {
-        name: "Agenda",
+        name: "Schedule",
         redirect: "#agenda",
       },
     ],

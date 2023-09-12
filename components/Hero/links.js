@@ -8,16 +8,16 @@ const navLinks = [
     redirect: "#about-us",
   },
   {
-    content: "Partners",
-    redirect: "#our-partners",
+    content: "Event Resources",
+    redirect: "#event-resources",
   },
   {
     content: "Speakers",
     redirect: "#speakers",
   },
   {
-    content: "Agenda",
-    redirect: "#agenda",
+    content: "Schedule",
+    redirect: "#schedule",
   },
 ];
 

@@ -1,9 +1,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import WTMAlgiers from "../../images/logos/WTMAlgiers-white.png";
+import Chainlink from "../../images/logos/Chainlink.svg";
 import NavLinks from "./links";
-import Bluebutton from "../shared/Bluebutton";
 const Navbar = () => {
   const [isNavToggled, setIsNavToggled] = useState(false);
   return (
@@ -11,8 +10,11 @@ const Navbar = () => {
       {/* Desktop menu */}
       <div>
         <div className="flex justify-between items-center">
-          <div>
-            <Image src={WTMAlgiers} alt="WTM Algiers" />
+          <div className="my-2 flex flex-row items-center space-x-3">
+            <Image src={Chainlink} alt="Chainlink Logo" />
+            <p className="font-medium text-qiskit-white text-center lg:text-left leading-[2rem] lg:text-2xl 2xl:text-4xl 2xl:leading-[2.875rem]">
+              Chainlink<span className="text-qiskit-blue"> Dehradun</span>
+            </p>
           </div>
 
           <ul className="hidden lg:flex items-center text-xl gap-16 font-medium text-qiskit-white 2xl:text-4xl 2xl:gap-24">
@@ -29,10 +31,6 @@ const Navbar = () => {
               );
             })}
           </ul>
-
-          <div className="hidden lg:flex">
-            <Bluebutton title={"Join us"} />
-          </div>
 
           <div
             onClick={() => setIsNavToggled(!isNavToggled)}

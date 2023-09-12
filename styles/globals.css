@@ -67,3 +67,12 @@ html {
     transform: translateY(-15px);
   }
 }
+
+.text-qiskit-blue {
+  color: #1a2b6b; /* Replace with the desired color code */
+}
+
+
+.text-qiskit-purple {
+  color: #dfe7fb; /* Replace with the desired color code */
+}

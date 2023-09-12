@@ -25,7 +25,9 @@ const getRemainingHours = (nowDayjs, timestampDayjs) => {
 };
 
 export default function getRemainingTime(timestamp) {
-  const timestampDayjs = dayjs(timestamp);
+  const timestampDayjs = dayjs("2023-09-23 11:00:00");
+  const timestampDay = dayjs("timestamp");
+  // console.log(timestampDay);
   const nowDayjs = dayjs();
   if (timestampDayjs.isBefore(nowDayjs)) {
     return {
