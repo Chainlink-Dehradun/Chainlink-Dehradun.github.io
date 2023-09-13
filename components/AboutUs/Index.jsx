@@ -1,7 +1,5 @@
 import Image from "next/image";
-import WTM from "../../images/logos/WTMAlgiers.png";
 import SectionTitle from "../shared/SectionTitle";
-import GDG from "../../images/logos/GDGAlgiers.png";
 import ParagSection from "../shared/ParagSection";
 import globe from "../../images/shapes/globe.png";
 import computer from "../../images/shapes/computer.png";

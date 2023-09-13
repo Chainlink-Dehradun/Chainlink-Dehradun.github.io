@@ -3,7 +3,6 @@ import Navbar from "./Navbar";
 import Qiskit from "../../images/logos/QiskitHero.png";
 // import web from "../../images/logos/web.png";
 import Arrow from "../../images/shapes/Arrow.png";
-import GDGAlgiers from "../../images/logos/GDGAlgiers-white.png";
 import CounterContainer from "./CounterContainer";
 import Maqam from "../../images/shapes/MaqamWhite.png";
 import Atom from "../../images/shapes/atomWhite.png";

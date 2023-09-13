@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import Qiskit from "../../images/logos/Qiskit.svg";
-import WTMWHITE from "../../images/logos/WTMAlgiers-white.png";
-import GDGWHITE from "../../images/logos/GDGAlgiers-white.png";
 import GlobeShape from "../../images/shapes/globe.png";
 import AlgeriaSymbol from "../../images/shapes/GDGAlgiers.png";
 import { socialsMedia, links } from "./data";
