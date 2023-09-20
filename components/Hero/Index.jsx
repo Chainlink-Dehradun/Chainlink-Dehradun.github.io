@@ -50,7 +50,7 @@ const Hero = () => {
                 <div className="relative h-[67px] bounce w-[67px] 2xl:w-[101px] 2xl:h-[114px]">
                   <Image src={Arrow} layout="fill" />
                 </div>
-                <div className="mb-[-50px] 2xl:mb-[-110px] text-qiskit-black">
+                <div className="mb-[-50px] 2xl:mb-[-110px]">
                 <ParagSection
                 redirect={"https://events.chain.link/events/details/chainlink-chainlink-dehradun-connected-smart-contracts-presents-smart-contract-developer-bootcamp/"}
                 buttonTitle={'Rsvp Now'}
