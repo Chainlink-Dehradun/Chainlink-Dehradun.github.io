@@ -52,7 +52,7 @@ const Hero = () => {
                 </div>
                 <div className="mb-[-50px] 2xl:mb-[-110px]">
                 <ParagSection
-                redirect={"https://events.chain.link/events/details/chainlink-chainlink-dehradun-connected-smart-contracts-presents-smart-contract-developer-bootcamp/"}
+                redirect={"https://chat.whatsapp.com/FF3Vz1PeiJACST7WNrACNI"}
                 buttonTitle={'Rsvp Now'}
               ></ParagSection>
                 </div>
