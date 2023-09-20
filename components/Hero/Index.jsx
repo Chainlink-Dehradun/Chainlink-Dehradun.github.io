@@ -51,10 +51,7 @@ const Hero = () => {
                   <Image src={Arrow} layout="fill" />
                 </div>
                 <div className="mb-[-50px] 2xl:mb-[-110px]">
-                <ParagSection
-                redirect={"https://chat.whatsapp.com/FF3Vz1PeiJACST7WNrACNI"}
-                buttonTitle={'Rsvp Now'}
-              ></ParagSection>
+                  <Purpulebutton title={"Rsvp Now!"} />
                 </div>
               </div>
             </div>
@@ -87,6 +84,11 @@ const Hero = () => {
         </div>
         
       </div>
+
+      <RSVP
+              redirect={"https://chat.whatsapp.com/FF3Vz1PeiJACST7WNrACNI"}
+              buttonTitle={'Rsvp Now'}
+            ></RSVP>
     </section>
   );
 };
