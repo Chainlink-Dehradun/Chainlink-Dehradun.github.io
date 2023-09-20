@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Navbar from "./Navbar";
 import SocialMenu from "../SocialMenu/SocialMenu";
-import Qiskit from "../../images/logos/QiskitHero.png";
 import pic from "../../images/logos/14.png";
+import ParagSection from "../shared/ParagSection";
+
 // import web from "../../images/logos/web.png";
 import Arrow from "../../images/shapes/Arrow.png";
 import CounterContainer from "./CounterContainer";
@@ -82,6 +83,11 @@ const Hero = () => {
         </div>
         
       </div>
+
+      <ParagSection
+              redirect={"https://chat.whatsapp.com/FF3Vz1PeiJACST7WNrACNI"}
+              buttonTitle={'Rsvp Now'}
+            ></ParagSection>
     </section>
   );
 };
