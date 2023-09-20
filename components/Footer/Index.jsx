@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Qiskit from "../../images/logos/Qiskit.svg";
+import wallet from "../../images/logos/13.png";
 import GlobeShape from "../../images/shapes/globe.png";
 import AlgeriaSymbol from "../../images/shapes/GDGAlgiers.png";
 import { socialsMedia, links } from "./data";
@@ -13,9 +13,9 @@ const Footer = () => {
         <Image src={GlobeShape} height={42} width={42} />
       </div>
       <div className="flex flex-col items-center lg:items-start lg:flex-row">
-        <div className="cursor-pointer -mt-16 order-first lg:order-last ">
+        <div className="cursor-pointer -mt-16 order-first lg:order-last w-56 h-auto">
           <Tilt>
-            <Image src={Qiskit} alt="Qiskit Fall Fest Algiers" />
+            <Image src={wallet} alt="Qiskit Fall Fest Algiers" />
           </Tilt>
         </div>
         <div className="pt-14 pl-4 pr-4 lg:pl-11 lg:pr-0 2xl:pl-16">

@@ -1,10 +1,19 @@
 import { useState } from "react";
-import Link from "next/link";
 import Image from "next/image";
 import Chainlink from "../../images/logos/Chainlink.svg";
 import NavLinks from "./links";
+
 const Navbar = () => {
   const [isNavToggled, setIsNavToggled] = useState(false);
+
+  const handleNavigation = (e, sectionId) => {
+    e.preventDefault();
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <header className="pt-8 lg:pt-1 flex flex-col gap-8">
       {/* Desktop menu */}
@@ -18,18 +27,19 @@ const Navbar = () => {
           </div>
 
           <ul className="hidden lg:flex items-center text-xl gap-16 font-medium text-qiskit-white 2xl:text-4xl 2xl:gap-24">
-            {NavLinks.map((navLink, idx) => {
-              return (
-                <Link key={idx} href={navLink.redirect}>
-                  <li className="cursor-pointer hover:text-qiskit-yellow transition-all duration-500 relative">
-                    {navLink.content == "Home" && (
-                      <div className="absolute left-0 -bottom-[4px] h-[5px] w-4/6 bg-qiskit-white"></div>
-                    )}
-                    <p>{navLink.content}</p>
-                  </li>
-                </Link>
-              );
-            })}
+            {NavLinks.map((navLink, idx) => (
+              <li key={idx} className="cursor-pointer hover:text-qiskit-yellow transition-all duration-500 relative">
+                <a 
+                  onClick={(e) => handleNavigation(e, navLink.sectionId)}
+                  href={`#${navLink.sectionId}`}
+                >
+                  {navLink.content}
+                  {navLink.content === "Home" && (
+                    <div className="absolute left-0 -bottom-[4px] h-[5px] w-4/6 bg-qiskit-white"></div>
+                  )}
+                </a>
+              </li>
+            ))}
           </ul>
 
           <div
@@ -47,20 +57,19 @@ const Navbar = () => {
       {isNavToggled && (
         <div className="flex flex-col items-center lg:hidden">
           <ul className="flex flex-col items-center text-xl gap-16 font-medium text-qiskit-white 2xl:text-4xl 2xl:gap-24">
-            {NavLinks.map((navLink, idx) => {
-              return (
-                <Link key={idx} href={navLink.redirect}>
-                  <li
-                    className="cursor-pointer relative transition-all duration-500 hover:text-qiskit-yellow"
-                  >
-                    {navLink.content == "Home" && (
-                      <div className="absolute left-2 -bottom-[4px] h-[5px] w-4/6 bg-qiskit-white"></div>
-                    )}
-                    <p>{navLink.content}</p>
-                  </li>
-                </Link>
-              );
-            })}
+            {NavLinks.map((navLink, idx) => (
+              <li key={idx} className="cursor-pointer relative transition-all duration-500 hover:text-qiskit-yellow">
+                <a 
+                  onClick={(e) => handleNavigation(e, navLink.sectionId)}
+                  href={`#${navLink.sectionId}`}
+                >
+                  {navLink.content}
+                  {navLink.content === "Home" && (
+                    <div className="absolute left-2 -bottom-[4px] h-[5px] w-4/6 bg-qiskit-white"></div>
+                  )}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       )}

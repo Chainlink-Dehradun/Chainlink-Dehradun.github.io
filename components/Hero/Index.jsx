@@ -2,6 +2,7 @@ import Image from "next/image";
 import Navbar from "./Navbar";
 import SocialMenu from "../SocialMenu/SocialMenu";
 import Qiskit from "../../images/logos/QiskitHero.png";
+import pic from "../../images/logos/14.png";
 // import web from "../../images/logos/web.png";
 import Arrow from "../../images/shapes/Arrow.png";
 import CounterContainer from "./CounterContainer";
@@ -19,7 +20,7 @@ const Hero = () => {
     <section id="home" className="min-h-screen hero-bg">
       <div className="section-container pb-24 md:pb-0">
         <Navbar />
-        <div className="flex flex-col gap-16 lg:gap-0 relative">
+        <div className="flex flex-col gap-16 lg:gap-0 relative mt-10 mb-4">
           <div className="w-12 h-12 absolute top-1/4 left-4 lg:top-4 lg:left-4">
             <Image src={Atom} />
           </div>
@@ -53,11 +54,11 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className="flex-1 pt-20 lg:pt-0 order-first lg:order-last">
-              <Tilt>
-                <Image src={Qiskit} />
-              </Tilt>
-            </div>
+            <div className="cursor-pointer -mt-16 order-first lg:order-last ">
+          <Tilt>
+            <Image src={pic} alt="Qiskit" />
+          </Tilt>
+        </div>
           </div>
 
           <div className="flex items-center justify-center space-x-4">

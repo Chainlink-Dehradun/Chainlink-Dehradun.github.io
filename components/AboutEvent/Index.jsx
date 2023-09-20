@@ -1,6 +1,6 @@
 import Image from "next/image";
 import SectionTitle from "../shared/SectionTitle";
-import Map from "../../images/sectionsAssets/Map.png";
+import person from "../../images/sectionsAssets/16.png";
 import GDGAlgiers from "../../images/shapes/GDGAlgiers.png";
 import globe from "../../images/shapes/globe.png";
 import atom from "../../images/shapes/atom.png";
@@ -56,7 +56,7 @@ const AboutEvent = () => {
       </div>
         
         <div className= "gap-8 row-2 lg:columns-2 mt-[50px]">
-          <div><Image src={Map} alt="" /></div>
+          <div><Image src={person} alt="" /></div>
           <div className="gap-8 rows-2 p-4 sm:p-10">
             <p className="text-xl 2xl:text-3xl lg:text-2xl"><b>Explore Web3 world and Smart Contracts at Graphic Era University Workshop. Unleash the potential of these technologies. Dive into this wonderful journey and gain practical skills in smart contracts during this enlightening event.</b></p>
             <div className="gap-4 columns-2 2xl:text-4xl lg:text-3xl text-xl font-bold mt-[15px] pr-2">

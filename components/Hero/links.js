@@ -1,23 +1,23 @@
 const navLinks = [
   {
     content: "Home",
-    redirect: "/chainlink-dehradun.github.io#home",
+    sectionId: "home",
   },
   {
     content: "About",
-    redirect: "/chainlink-dehradun.github.io#about-event",
+    sectionId: "about-event",
   },
   {
     content: "Event Resources",
-    redirect: "/chainlink-dehradun.github.io#event-resources",
+    sectionId: "event-resources",
   },
   {
     content: "Speakers",
-    redirect: "/chainlink-dehradun.github.io#speakers",
+    sectionId: "speakers",
   },
   {
     content: "Schedule",
-    redirect: "/chainlink-dehradun.github.io#schedule",
+    sectionId: "schedule",
   },
 ];
 
