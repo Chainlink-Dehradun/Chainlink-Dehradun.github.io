@@ -64,7 +64,7 @@ const Hero = () => {
             {/* <p className="font-medium text-qiskit-white text-center lg:text-left leading-[2rem] lg:text-2xl 2xl:text-4xl 2xl:leading-[2.875rem]">
                 Share
             </p> */}
-           
+            <SocialMenu />
             <CounterContainer countDownLimit={1666425600000} />
           </div>
 
@@ -79,7 +79,7 @@ const Hero = () => {
             <Image src={Computer} />
           </div>
         </div>
-        <SocialMenu />
+        
       </div>
     </section>
   );
