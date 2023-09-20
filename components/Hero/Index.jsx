@@ -2,6 +2,7 @@ import Image from "next/image";
 import Navbar from "./Navbar";
 import SocialMenu from "../SocialMenu/SocialMenu";
 import pic from "../../images/logos/14.png";
+import Rsvp from "../shared/RsvpSection";
 // import web from "../../images/logos/web.png";
 import Arrow from "../../images/shapes/Arrow.png";
 import CounterContainer from "./CounterContainer";
@@ -48,7 +49,10 @@ const Hero = () => {
                   <Image src={Arrow} layout="fill" />
                 </div>
                 <div className="mb-[-50px] 2xl:mb-[-110px]">
-                  <Purpulebutton redirect="https://events.chain.link/events/details/chainlink-chainlink-dehradun-connected-smart-contracts-presents-smart-contract-developer-bootcamp/" title={"Rsvp Now!"} />
+                  <Rsvp
+                    redirect={'https://events.chain.link/events/details/chainlink-chainlink-dehradun-connected-smart-contracts-presents-smart-contract-developer-bootcamp/'}
+                    buttonTitle={'Rsvp now!'}
+                  ></Rsvp>
                 </div>
               </div>
             </div>
