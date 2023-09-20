@@ -5,7 +5,7 @@ const navLinks = [
   },
   {
     content: "About",
-    redirect: "#about-us",
+    redirect: "#about-event",
   },
   {
     content: "Event Resources",

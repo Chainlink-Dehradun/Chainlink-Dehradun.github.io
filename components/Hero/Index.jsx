@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Navbar from "./Navbar";
+import SocialMenu from "../SocialMenu/SocialMenu";
 import Qiskit from "../../images/logos/QiskitHero.png";
 // import web from "../../images/logos/web.png";
 import Arrow from "../../images/shapes/Arrow.png";
@@ -47,7 +48,7 @@ const Hero = () => {
                   <Image src={Arrow} layout="fill" />
                 </div>
                 <div className="mb-[-50px] 2xl:mb-[-110px]">
-                  <Purpulebutton title={"RSVP Now!"} />
+                  <Purpulebutton title={"Rsvp Now!"} />
                 </div>
               </div>
             </div>
@@ -59,9 +60,14 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="flex items-center">
+          <div className="flex items-center justify-center space-x-4">
+            {/* <p className="font-medium text-qiskit-white text-center lg:text-left leading-[2rem] lg:text-2xl 2xl:text-4xl 2xl:leading-[2.875rem]">
+                Share
+            </p> */}
+            <SocialMenu />
             <CounterContainer countDownLimit={1666425600000} />
           </div>
+
 
           <div className="w-12 h-12 absolute bottom-16 left-8">
             <Image src={Atom} />

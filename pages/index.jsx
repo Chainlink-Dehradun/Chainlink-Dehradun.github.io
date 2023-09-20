@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>WEB 3 Workshop</title>
+        <title>Chainlink Dehradun</title>
         <link rel="shortcut icon" href="/qiskit.png" />
       </Head>
 

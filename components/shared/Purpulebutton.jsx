@@ -1,6 +1,7 @@
 const Button = ({ title }) => {
   return (
-   <a href="#">
+   <a href="https://chat.whatsapp.com/FF3Vz1PeiJACST7WNrACNI"
+   target="_blank" rel="noopener noreferrer">
      <button
       disabled={false}
       className="z-2"

@@ -12,22 +12,24 @@ export const speakers = [
   {
     image: Adarsh,
     name: "Adarsh Dabral",
-    profession: "Learn to live Mentos Life 🧬😁"
+    profession: "Learn to live Mentos Life"
   },
   {
     image: Balendu,
     name: "Balendu Rawat",
     profession: `Wanna be a techie?
-Fuck around and Find out!`,
+Fcuk around and Find out!`,
   },
   {
     image: Sarthak,
     name: "Sarthak",
-    profession:`Yet to decide`
+    profession:`Need something awesome to discuss?
+    Blockchain is just the thing for you`
   },
   {
     image: BalaJI,
     name: "Bala JI",
-    profession: `Yet to decide`
+    profession: `Wanna see what future looks like?
+  Well, Welcome to TRIKON`
   },
 ];
