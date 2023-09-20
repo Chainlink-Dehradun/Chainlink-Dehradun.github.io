@@ -1,10 +1,14 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
 
-const nextConfig = {
+module.exports = {
+  // Enabling React's Strict Mode
   reactStrictMode: true,
-  swcMinify: true,
-  // basePath: isProd ? '/Chainlink-Dehradun.github.io' : '',
-  // assetPrefix: isProd ? '/Chainlink-Dehradun.github.io/' : '',
-}
 
-module.exports = nextConfig
+  // Using SWC for minification
+  swcMinify: true,
+
+  // Setting the base path and asset prefix for production deployment on GitHub Pages
+  basePath: isProd ? '/Chainlink-Dehradun.github.io' : '',
+  assetPrefix: isProd ? '/Chainlink-Dehradun.github.io/' : '',
+};
