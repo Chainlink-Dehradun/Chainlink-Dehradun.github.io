@@ -2,9 +2,6 @@ import Image from "next/image";
 import Navbar from "./Navbar";
 import SocialMenu from "../SocialMenu/SocialMenu";
 import pic from "../../images/logos/14.png";
-import ParagSection from "../shared/ParagSection";
-import RSVP from "../shared/RsvpSection";
-
 // import web from "../../images/logos/web.png";
 import Arrow from "../../images/shapes/Arrow.png";
 import CounterContainer from "./CounterContainer";
@@ -51,7 +48,7 @@ const Hero = () => {
                   <Image src={Arrow} layout="fill" />
                 </div>
                 <div className="mb-[-50px] 2xl:mb-[-110px]">
-                  <Purpulebutton title={"Rsvp Now!"} />
+                  <Purpulebutton redirect="https://events.chain.link/events/details/chainlink-chainlink-dehradun-connected-smart-contracts-presents-smart-contract-developer-bootcamp/" title={"Rsvp Now!"} />
                 </div>
               </div>
             </div>
@@ -85,10 +82,7 @@ const Hero = () => {
         
       </div>
 
-      <RSVP
-              redirect={"https://chat.whatsapp.com/FF3Vz1PeiJACST7WNrACNI"}
-              buttonTitle={'Rsvp Now'}
-            ></RSVP>
+      
     </section>
   );
 };
