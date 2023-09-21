@@ -53,8 +53,11 @@ const Hero = () => {
                     redirect={'https://events.chain.link/events/details/chainlink-chainlink-dehradun-connected-smart-contracts-presents-smart-contract-developer-bootcamp/'}
                     buttonTitle={'Rsvp now!'}
                   ></Rsvp>
-                  <p>hello</p>
                 </div>
+                <Rsvp
+                    redirect={'https://events.chain.link/events/details/chainlink-chainlink-dehradun-connected-smart-contracts-presents-smart-contract-developer-bootcamp/'}
+                    buttonTitle={'Rsvp now!'}
+                  ></Rsvp>
               </div>
             </div>
 
