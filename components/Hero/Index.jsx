@@ -13,7 +13,7 @@ import Computer from "../../images/shapes/computerWhite.png";
 import Purpulebutton from "../shared/Purpulebutton";
 import Tilt from "react-parallax-tilt";
 import Typewriter from "typewriter-effect";
-import ParagSection from "../shared/RsvpSection";
+import ParagSection from "../shared/ParagSection";
 
 
 const Hero = () => {
@@ -50,15 +50,15 @@ const Hero = () => {
                   <Image src={Arrow} layout="fill" />
                 </div>
                 <div className="mb-[-50px] 2xl:mb-[-110px]">
-                  <ParagSection
-                    redirect={'https://events.chain.link/events/details/chainlink-chainlink-dehradun-connected-smart-contracts-presents-smart-contract-developer-bootcamp/'}
-                    buttonTitle={'Rsvp now!'}
-                  ></ParagSection>
-                </div>
-                <Rsvp
+                  <Rsvp
                     redirect={'https://events.chain.link/events/details/chainlink-chainlink-dehradun-connected-smart-contracts-presents-smart-contract-developer-bootcamp/'}
                     buttonTitle={'Rsvp now!'}
                   ></Rsvp>
+                </div>
+                <ParagSection
+                    redirect={'https://events.chain.link/events/details/chainlink-chainlink-dehradun-connected-smart-contracts-presents-smart-contract-developer-bootcamp/'}
+                    buttonTitle={'Rsvp now!'}
+                ></ParagSection>
               </div>
             </div>
 
