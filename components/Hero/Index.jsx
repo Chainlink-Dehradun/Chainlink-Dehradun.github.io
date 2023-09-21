@@ -2,7 +2,9 @@ import Image from "next/image";
 import Navbar from "./Navbar";
 import SocialMenu from "../SocialMenu/SocialMenu";
 import pic from "../../images/logos/14.png";
+
 import Rsvp from "../shared/RsvpSection";
+
 // import web from "../../images/logos/web.png";
 import Arrow from "../../images/shapes/Arrow.png";
 import CounterContainer from "./CounterContainer";
@@ -10,7 +12,6 @@ import Maqam from "../../images/shapes/MaqamWhite.png";
 import Atom from "../../images/shapes/atomWhite.png";
 import Globe from "../../images/shapes/globe.png";
 import Computer from "../../images/shapes/computerWhite.png";
-import Purpulebutton from "../shared/Purpulebutton";
 import Tilt from "react-parallax-tilt";
 import Typewriter from "typewriter-effect";
 import ParagSection from "../shared/ParagSection";
@@ -45,7 +46,7 @@ const Hero = () => {
               <p className="font-medium text-center lg:text-left leading-[2rem] lg:text-2xl 2xl:text-4xl 2xl:leading-[2.875rem]">
                 Your chance to discover the Web 3.0  world!
               </p>
-              <div className="flex items-end">
+              {/* <div className="flex items-end">
                 <div className="relative h-[67px] bounce w-[67px] 2xl:w-[101px] 2xl:h-[114px]">
                   <Image src={Arrow} layout="fill" />
                 </div>
@@ -55,11 +56,7 @@ const Hero = () => {
                     buttonTitle={'Rsvp now!'}
                   ></Rsvp>
                 </div>
-                <ParagSection
-                    redirect={'https://events.chain.link/events/details/chainlink-chainlink-dehradun-connected-smart-contracts-presents-smart-contract-developer-bootcamp/'}
-                    buttonTitle={'Rsvp now!'}
-                ></ParagSection>
-              </div>
+              </div> */}
             </div>
 
             <div className="cursor-pointer -mt-16 order-first lg:order-last ">
@@ -90,7 +87,10 @@ const Hero = () => {
         </div>
         
       </div>
-
+      <ParagSection
+          redirect={'https://events.chain.link/events/details/chainlink-chainlink-dehradun-connected-smart-contracts-presents-smart-contract-developer-bootcamp/'}
+          buttonTitle={'Rsvp now!'}
+      ></ParagSection>
       
     </section>
   );
